@@ -1,0 +1,12 @@
+/**загрузила шрифты Forum - для h1 и  Inter - для текста**/
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;500;600;700;800;900&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+hr {
+  width: 50px;
+  height: 1px;
+  background-color: $color-black;
+  margin: 0 auto;
+}

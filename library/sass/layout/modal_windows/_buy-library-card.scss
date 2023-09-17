@@ -1,0 +1,153 @@
+.wrapper-buy-library-card.no-active {
+  display: none;
+}
+.wrapper-buy-library-card {
+  display: block;
+  position: fixed;
+  top: 0;
+  //left: -17%;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(75, 75, 75);
+  background: radial-gradient(
+    circle,
+    rgba(75, 75, 75, 0.7595413165266106) 0%,
+    rgba(0, 0, 0, 0.9220063025210083) 100%
+  );
+}
+.buy-library-card {
+  width: 640px;
+  height: 540px;
+  background-color: $color-text;
+  position: relative;
+  top: calc(50% - (540px / 2));
+  left: calc(50% - (640px / 2));
+  display: flex;
+  flex-direction: column;
+  color: $color-black-section;
+}
+#h2-close-btn {
+  display: flex;
+  background-color: $color-black;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+#h2-close-btn .close.btn {
+  margin-right: 20px;
+}
+#h2-close-btn .close.btn button {
+  width: 15px;
+  height: 15px;
+}
+.buy-library-card h2 {
+  text-align: center;
+  color: $color-text;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-left: 137px;
+}
+.buy-library-card .close.btn {
+  width: 15px;
+  height: 15px;
+  position: static;
+}
+.wrapper-buy-input-paragraph {
+  padding: 10px 35px 40px 35px;
+  display: flex;
+}
+.wrapper-buy-input {
+  margin-right: 40px;
+}
+.wrapper-buy-input label {
+  color: $color-black-section;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 0.3px;
+}
+#form-buy-library-card {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-buy-input input {
+  border: 1.5px solid$color-brown;
+  display: block;
+  width: 200px;
+  height: 20px;
+  margin-top: 10px;
+}
+.label-expiration-code {
+  display: block;
+  margin-right: 80px;
+}
+.label-expiration-code input {
+  display: inline;
+  width: 45px;
+  margin-right: 5px;
+}
+#cvc {
+  width: 45px;
+  margin-bottom: 10px;
+}
+.button-buy-price {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 25px;
+  align-items: flex-end;
+}
+#button-buy-lib-card {
+  position: static;
+  //margin-right: 25px;
+}
+.price {
+  color: $color-black;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.buy-paragraph {
+  width: 330px;
+  color: $color-input-placeholder;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 2px;
+}
+
+.wrapper-buy-input input:hover,
+.wrapper-buy-input input:active {
+  border: 1.7px solid $color-brown;
+  transition: all 0.2s ease-in-out;
+}
+#h2-close-btn button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+#button-buy-lib-card:disabled,
+#button-buy-lib-card:disabled:hover {
+  color: black;
+  border-color: black;
+  cursor: default;
+  background-color: white;
+  
+}

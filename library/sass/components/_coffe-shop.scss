@@ -1,0 +1,136 @@
+.coffee-shop {
+  display: flex;
+  flex-direction: column;
+  margin-top: -11px;
+}
+.coffee-shop h2 {
+  color: $color-black;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.coffee-shop .coffee-shop-paragraph {
+  color: $color-black-section;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  padding: 40px 0;
+  margin-left: 20px;
+}
+
+.coffee-shop .all-coffee-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.all-coffee-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.coffee-shop .coffee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.coffee-shop .coffee-card ul li {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.coffee-shop .coffee-card h3 {
+  color: $color-brown;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.coffee-shop .coffee-card:first-of-type h3 {
+  margin-left: 20px;
+  margin-top: -2px;
+}
+.coffee-shop .coffee-card:last-of-type h3 {
+  margin-left: 40px;
+  margin-top: -2px;
+}
+.coffee-shop .coffee-card li {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 40px;
+  position: relative;
+  left: 19px;
+  top: 1px;
+}
+.coffee-shop .coffee-card:first-child ul li p:first-of-type {
+  width: 199px;
+}
+.coffee-shop .coffee-card:last-child ul li p:first-of-type {
+  width: 215px;
+  text-align: right;
+}
+
+.coffee-shop .coffee-card ul li hr {
+  width: 100px;
+  height: 1px;
+  background-color: $color-brown;
+  margin-top: -2px;
+}
+.coffee-shop .coffee-card ul li p:last-child {
+  color: $color-black-section;
+  font-family: Forum, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.coffee-shop .coffee-card:last-child h3 {
+  display: flex;
+  align-self: center;
+  margin-right: -137px;
+}
+.coffee-shop .coffee-card:last-child p {
+  display: flex;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.coffee-shop .coffee-card:last-child p:last-child {
+  position: relative;
+}
+.coffee-shop .coffee-card:last-child ul li:last-child p:first-child {
+  // хочу поправить рр для Pineapple Cake
+  position: relative;
+  left: 2px;
+}
+
+//стараюсь подвинуть блок с десертами для соответствия макету
+.coffee-shop .coffee-card:last-of-type {
+  margin-right: 35px;
+}
+// сдвигаю слово from из .coffee-shop-paragraph на следующую строку
+@media (min-width: 1440px) {
+  .coffee-shop-paragraph {
+    width: 1400px;
+  }
+}

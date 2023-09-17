@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    overflow-x: hidden;
+  }
+  header .navigation {
+    display: none; // скрываю обычную навигацию
+  }
+  header .burger-menu {
+    // обратно проявляю кнопку бургер
+    position: relative;
+    top: 0px;
+  }
+
+  .navigation.for-burger-menu {
+    display: flex;
+    background-color: $color-black-section;
+    overflow-x: hidden;
+  }
+  // СЕКЦИЯ КОФЕ-ШОП
+  .coffee-shop {
+    margin-top: -30px;
+    padding: 20px;
+  }
+
+  .coffee-shop .all-coffee-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}

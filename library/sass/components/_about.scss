@@ -1,0 +1,152 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about h2 {
+  text-align: center;
+  color: $color-black;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.about p {
+  color: $color-black-section;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 40px 0 20px;
+}
+
+//старый вариант карусели-картинок
+// .about .image-carusel .image {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+// }
+// .about .image-carusel .image img {
+//   flex-shrink: 1;
+//   flex-basis: 460px;
+//   min-width: 150px;
+//   padding: 0 5px;
+
+//   //добавляю свойства для плавного перехода впоследствии в js при смене картинок
+
+//   transition-duration: 0.5s;
+//   transition-timing-function: ease-in-out;
+// }
+
+// пришлось поменять для нормального перехода в js
+.image-carusel {
+  // пришлось поставить, чтобы вылезающие картинки не вылезали за границу в дев тулс
+  max-width: 1440px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.image-carusel .image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; /* Ограничиваем ширину карусели до 450px */
+  gap: 1.9%;
+  object-fit: contain;
+}
+
+.image-carusel .image img {
+  object-fit: contain;
+  max-width: 32.5%;
+  //padding-left: 5px;
+
+  /* Добавляем свойства для плавного перехода */
+  // transition-duration: 0.4s;
+  // transition-timing-function: ease-in-out;
+
+  transition: all 0.5s ease;
+}
+
+.about .button-carusel {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin-left: 53px;
+}
+.about .button-carusel .button {
+  // обащаюсь к дивам, в которые вложены мои кнопки
+  width: 26px;
+  height: 26px;
+  // background-color: pink; для быстрого обнаружения области
+  border-radius: 50%;
+}
+.about .button-carusel button {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-color: $color-black;
+  border-radius: 50%;
+  //padding: 10px;
+  margin: 0 5px;
+  position: relative;
+  bottom: 1.5px;
+}
+.about .button-carusel .button.one button {
+  background-color: $color-brown;
+}
+
+// ниже пытаюсь сделать pp для картинок
+// .about .image-carusel .image img:first-child {
+//   position: relative;
+//   left: 5px;
+//   bottom: 2px;
+// }
+// .about .image-carusel .image img:nth-child(2) {
+//   position: relative;
+//   left: 0.5px;
+//   bottom: 2px;
+// }
+// .about .image-carusel .image img:last-child {
+//   position: relative;
+//   right: 5px;
+//   bottom: 2px;
+// }
+// ниже пытаюсь сделать pp для кнопок
+.about .button-carusel .button button {
+  position: relative;
+  bottom: 2px;
+}
+// ниже пытаюсь сделать интерактив для кнопок
+.about .button-carusel .button:hover,
+.about .button-carusel button:hover {
+  cursor: pointer;
+}
+// сдвигаю блоки для кнопок пагинации, чтобы сделать 5 px сверху
+.about .button-carusel .button.one,
+.about .button-carusel .button.two,
+.about .button-carusel .button.three {
+  position: relative;
+  bottom: 7px;
+}
+.about .button-carusel .button.one button,
+.about .button-carusel .button.two button,
+.about .button-carusel .button.three button {
+  position: relative;
+  top: 5px;
+}
+
+//ниже скрыла стрелочки для прокрутки картиночек для макета на 1440пх
+.about .image-carusel .carret {
+  display: none;
+}
+// скрываю 2 последние добавленные кнопки под картинками для совпадения с макетом
+.about .button-carusel .button.four button,
+.about .button-carusel .button.five button {
+  position: absolute;
+  bottom: 99999999px;
+}

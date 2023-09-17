@@ -1,0 +1,31 @@
+.welcome {
+  background-image: url("../assets/Welcome.png");
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+// создаю новый блок-обертку для заголовка h2
+.welcome .wel-h2 {
+  width: 600px; // ЗДЕСЬ ПРОБЛЕМА С БЛОКОМ, НУЖНО УБРАТЬ ФИКСИРОВАННУЮ ШИРИНУ И ВЫСОТУ!
+  height: 220px;
+  padding: 35px 40px;
+  background-color: $color-black;
+  position: relative;
+  top: 30px;
+}
+
+.welcome h2 {
+  color: $color-text;
+  text-transform: uppercase;
+  font-family: Forum, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  position: relative;
+  right: 1.82px;
+  bottom: 2px;
+}

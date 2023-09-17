@@ -1,0 +1,248 @@
+.favorites {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 10px;
+  left: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.favorites-h2 {
+  text-align: center;
+  color: $color-black;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.favorites .favorites-paraghraph {
+  color: $color-black-section;
+  text-align: left;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 40px 20px;
+}
+.favorites form.favorites-books {
+  display: flex;
+  justify-content: flex-start;
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+.favorites form.favorites-books label {
+  padding-right: 45px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 1px;
+  display: inline;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.favorites form.favorites-books div {
+  width: 192px;
+}
+// для рр последнего див элемента с инпутом
+.favorites form.favorites-books div:last-child {
+  position: relative;
+  left: 10px;
+  // margin-left: 20px;
+}
+.favorites form.favorites-books input {
+  // НЕ ЗАБУДЬ ПОМЕНЯТЬ ЦВЕТ РАДИОКНОПКИ ПРИ ЩЕЛЧКЕ!!!!
+  width: 17px;
+  height: 17px;
+  background-color: $color-black-section;
+  padding: 5px;
+  position: relative;
+  top: 2px;
+  display: inline;
+  cursor: pointer;
+}
+.favorites form.favorites-books input:nth-child(1) {
+  margin-left: 20px;
+}
+.favorites .all-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 20px;
+}
+.favorites .card {
+  // для скрытия в js
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+  //
+
+  flex-basis: 550px;
+  height: 555px;
+  border: 1px solid $color-black-section;
+  background: $color-text;
+  padding: 15px 20px;
+  margin-right: 40px;
+  position: relative;
+  left: 0;
+  z-index: 10;
+  //transform: scale(1);
+  > img {
+    position: absolute;
+    right: -40px;
+    bottom: 0.01px;
+  }
+}
+
+.favorites .card h3 {
+  color: $color-black-section;
+  font-family: Forum, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+}
+
+.favorites .card hr {
+  width: 60px;
+  margin: 0;
+  background-color: $color-brown;
+  position: relative;
+  bottom: 3px;
+}
+.favorites .card .title-card,
+.favorites .card h4 {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.favorites .card .title-card {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.favorites .card h4 {
+  text-transform: capitalize;
+  position: relative;
+  bottom: 3px;
+}
+.favorites .card p {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 355px;
+  margin-top: 20px;
+  position: relative;
+  bottom: 2.5px;
+}
+.favorites .button {
+  width: 75px;
+  height: 30px;
+  background-color: $color-text;
+  border: 1px solid $color-black;
+  border-radius: 2px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.favorites button[disabled] {
+  color: $color-brown;
+  border: 1px solid $color-brown;
+}
+
+// здесь ИНТЕРАКТИВ ДЛЯ КНОПОК
+.favorites .button:not(.button.disabled):hover {
+  background-color: $color-brown;
+  border: 1px solid $color-brown;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.favorites form input[type="radio"]:checked + label,
+.favorites form div:active {
+  font-weight: bold;
+}
+
+// СКРЫВАЮ ЗДЕСЬ БЛОКИ ДЛЯ БУДУЩЕЙ ВЕРСТКИ!!!!
+// .favorites .card.hidden-block {
+//   display: none;
+// }
+
+// для скрытия блоков по умолчанию, для js
+.favorites .card.hidden {
+  opacity: 0;
+  visibility: hidden;
+  left: -1000px;
+  position: absolute;
+  //transform: scale(0);
+  z-index: -50;
+  // height: 0px;
+  // transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  animation: fadeOut 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    //left: -1000px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -50;
+    //transform: scaleY(0);
+    //height: 0;
+    //transform: translateX(100%);
+  }
+  to {
+    //left: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    // transform: scaleY(1);
+    //height: 555px;
+    //transform: translateX(0%);
+  }
+}
+// плавное исчезновение
+@keyframes fadeOut {
+  from {
+    //left: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    //transform: scaleY(1);
+    //height: 555px;
+    //transform: translateX(0%);
+  }
+  to {
+    //left: -1000px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -50;
+    // transform: scaleY(0);
+    // height: 0;
+    // transform: translateX(100%);
+  }
+}

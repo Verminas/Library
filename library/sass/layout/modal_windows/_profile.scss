@@ -1,0 +1,181 @@
+.wrapper-profile.no-active {
+  display: none;
+}
+.wrapper-profile {
+  display: block;
+  position: fixed;
+  top: 0;
+  //left: -17%;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(75, 75, 75);
+  background: radial-gradient(
+    circle,
+    rgba(75, 75, 75, 0.7595413165266106) 0%,
+    rgba(0, 0, 0, 0.9220063025210083) 100%
+  );
+}
+.profile {
+  width: 600px;
+  height: 400px;
+  background-color: $color-text;
+  position: relative;
+  top: calc(50% - (400px / 2));
+  left: calc(50% - (600px / 2));
+  display: flex;
+  // justify-content: space-between;
+  //align-items: center;
+  color: $color-black-section;
+  padding: 0;
+}
+.wrapper-initials-first-last-name {
+  background-color: $color-black;
+  width: 170px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-initials {
+  width: 80px;
+  height: 80px;
+  background-color: $color-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.wrapper-initials span.initials {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: capitalize;
+}
+.wrapper-firsr-last-name {
+  background-color: $color-text;
+  min-width: 120px;
+  max-width: 140px;
+  width: auto;
+  height: auto;
+  padding: 5px 15px;
+}
+.first-last-name {
+  color: $color-black-section;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.wrapper-my-profile-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  padding: 40px 0px 40px 20px;
+}
+.my-profile {
+  color: $color-black-section;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 50% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.wrapper-panel-with-information.my-prof {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.panel-with-information.my-prof {
+  gap: 20px;
+}
+.panel-inf.my-prof {
+  gap: 10px;
+}
+.wrapper-panel-with-information.my-prof p:first-of-type {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+.wrapper-panel-with-information.my-prof p:last-of-type {
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+}
+.wrapper-rented-books {
+  margin-bottom: 40px;
+}
+.rented-books {
+  color: $color-black;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 80% */
+  margin-top: 30px;
+}
+.wrapper-list {
+  margin-top: 30px;
+  color: $color-black-section;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  gap: 0;
+}
+.list-rented-books {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rented-book {
+  list-style-type: disc;
+}
+.wrapper-card-number {
+  color: $color-black;
+  // text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  display: flex;
+  gap: 15px;
+}
+.wrapper-card-number p {
+  display: inline-block;
+}
+.wrapper-card-number span {
+  color: $color-brown;
+  cursor: pointer;
+}
+.comma-space {
+  margin-left: -10px;
+}
+.profile .close.btn {
+  position: static;
+  width: 15px;
+  height: 15px;
+  margin-top: 25px;
+  margin-left: 20px;
+}

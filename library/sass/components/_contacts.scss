@@ -1,0 +1,75 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.contacts h2 {
+  color: $color-black;
+  text-align: center;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 20px;
+}
+.contacts .address-info-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.contacts .address-info-image .address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts .address-info-image .address-info h3 {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+.contacts .address-info-image .address-info p {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.contacts .address-info-image .address-info a {
+  text-decoration: none;
+  color: $color-black;
+}
+.contacts .address-info-image img {
+  width: 696px;
+  height: 414px;;
+}
+
+// ставлю неразрывную строку для текста For TTY service
+.contacts .address-info p:nth-child(3) {
+  white-space: nowrap;
+}
+
+//стараюсь для рр, подтягиваю Senior Staff
+.contacts .address-info h3:nth-child(5) {
+  position: relative;
+  top: 21px;
+}
+
+//интерактив для ссылок
+.contacts a:hover {
+  color: #bb945f !important;
+}
+.contacts a:hover {
+  transition: 0.4s ease-in-out;
+}

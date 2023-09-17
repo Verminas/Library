@@ -1,0 +1,20 @@
+@import "base/normalize";
+
+@import "abstracts/constants";
+
+@import "base/base";
+
+@import "layout/wrapper", "layout/header", "layout/footer", "layout/main",
+  "layout/modal_windows/drop-menu", "layout/modal_windows/register",
+  "layout/modal_windows/login", "layout/modal_windows/profile",
+  "layout/modal_windows/buy-library-card";
+
+@import "components/welcome", "components/about", "components/favorites",
+  "components/coffe-shop", "components/contacts", "components/digital",
+  "components/auth-digital";
+
+@import "media_query/media_1340.scss", "media_query/media_1260.scss",
+  "media_query/media_1115.scss", "media_query/media_1024.scss",
+  "media_query/media_768.scss"; // ,
+// "media_query/media_765.scss",
+// "media_query/media_640.scss";

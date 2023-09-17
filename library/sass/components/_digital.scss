@@ -1,0 +1,235 @@
+.library-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -5px;
+}
+.library-card h2 {
+  color: $color-black;
+  text-align: center;
+  font-family: Forum, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 20px;
+}
+.check-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.check-card-one h3 {
+  color: $color-black-section;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.card-form {
+  width: 600px;
+  height: 386px;
+  flex-shrink: 0;
+  border: 3px solid $color-brown;
+  background: $color-text;
+}
+.card-form-wrapper {
+  background-color: $color-brown;
+  width: 560px;
+  height: 272px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  bottom: 3px;
+  right: 4px;
+}
+.card-form h4 {
+  color: $color-black-section;
+  font-family: Forum, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin: 20px;
+}
+.card-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  bottom: 20px;
+}
+.card-form form input {
+  width: 520px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $color-text;
+  padding-bottom: 25px;
+}
+.card-form-wrapper form input:first-child {
+  margin-bottom: 25px;
+}
+.card-form-wrapper form input:last-child {
+  margin-bottom: 25px;
+}
+.card-form-wrapper form input {
+  color: $color-input-placeholder;
+  font-family: Forum, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  padding: 8px 20px;
+}
+
+// хз почему не срабатывает
+.card-form-wrapper form input:active,
+.card-form-wrapper form input:focus,
+.card-form-wrapper form input:hover {
+  color: $color-brown;
+}
+.card-form button {
+  display: flex;
+  padding: 10px 40px;
+  border-radius: 2px;
+  border: 1px solid $color-black;
+  margin: 20px 179px 30px;
+  background-color: $color-text;
+  padding: 10px 40px;
+  position: relative;
+  bottom: 1px;
+  right: 3px;
+  height: 42px;
+  width: 245px;
+}
+.check-the-card.no-active {
+  display: none;
+}
+// панель с информацией, появляется с помощью js
+.wrapper-panel-with-information {
+  display: flex;
+  width: 169px;
+  height: 63px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.wrapper-panel-with-information.no-active {
+  display: none;
+}
+.panel-with-information {
+  display: flex;
+  gap: 35px;
+}
+.panel-with-information p {
+  color: $color-black;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 200% */
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+.panel-with-information img {
+  width: 20px;
+  height: 21px;
+}
+.panel-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// второй вариант оформления текста в кнопке, но он не работает
+span.button-check,
+button.button-check {
+  color: $color-black;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 2px;
+}
+
+.check-card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.check-card-two p:first-child {
+  color: $color-black-section;
+  text-align: center;
+  font-family: Forum, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 35px;
+}
+.check-card-two p:nth-child(2) {
+  width: 456px;
+  color: $color-black-section;
+  text-align: right;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+.cards-authorization {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 35px;
+  gap: 20px;
+}
+.cards-authorization button {
+  display: flex;
+  width: 75px;
+  height: 30px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-text;
+  color: $color-black;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid $color-black;
+}
+// интерактивность кнопочек
+.library-card .check-card button:hover,
+.library-card .check-card button:active {
+  background-color: $color-brown !important;
+  border: 1px solid $color-brown !important;
+  transition: 0.4s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+// забыла добавить тень для карты с формой, добавляю сейчас
+.card-form {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,192 @@
+@media screen and (max-width: 765px) {
+  .wrapper {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  header nav {
+    position: absolute;
+    bottom: 99999999px;
+  }
+  header .burger-menu {
+    position: static;
+  }
+  .welcome {
+    background-image: url("../assets/Welcome_tablet.png");
+  }
+  .about p {
+    padding: 40px 20px;
+  }
+  .about .image-carusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .image-carusel .carret {
+    display: contents;
+    height: 30px;
+  }
+  .about .image-carusel .carret.left button {
+    margin-top: 22px;
+    margin-left: 60px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .about .image-carusel .carret.right button {
+    margin-top: 22px;
+    margin-right: 60px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .about .image-carusel .image img {
+    margin-top: -18px;
+    margin-left: -10px;
+  }
+  .about .image-carusel .image img:not(:first-of-type) {
+    position: absolute;
+    bottom: 99999999px;
+  }
+  .about .button-carusel {
+    margin-top: -15px;
+    margin-left: 0px;
+  }
+  .about .button-carusel .button.four button,
+  .about .button-carusel .button.five button {
+    position: relative;
+    top: -2px;
+  }
+  .favorites .all-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: -30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .favorites .all-card .card:not(:first-of-type) {
+    margin-top: 5px;
+  }
+  .favorites .all-card .card {
+    width: 550px;
+    height: 555px;
+  }
+  .favorites .button {
+    margin-bottom: -4px;
+  }
+  .favorites img {
+    margin-bottom: -4px;
+  }
+  .favorites form label {
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  .coffee-shop {
+    margin-top: -30px;
+    padding: 20px;
+  }
+  .coffee-shop .all-coffee-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .coffee-shop .coffee-shop-paragraph p:last-of-type {
+    margin-left: -2px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:first-of-type {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:last-of-type {
+    margin-left: 0px;
+    margin-top: 2px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:last-of-type p:last-of-type {
+    margin-left: -5px;
+  }
+  .contacts {
+    margin-top: 20px;
+  }
+  .contacts .address-info-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .contacts #address-info-image-img img {
+    max-width: 600px;
+    height: auto;
+    margin: 0;
+  }
+  .library-card {
+    margin-top: 1px;
+  }
+  .library-card .check-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library-card .check-card .check-card-two {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library-card .check-card .check-card-two p:nth-child(2) {
+    width: auto;
+    justify-self: center;
+    text-align: center;
+    margin: 5px 70px;
+  }
+  footer,
+  footer .adress-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-two-list li:nth-child(2) {
+    margin-left: -60px;
+  }
+  footer .footer-two-list {
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

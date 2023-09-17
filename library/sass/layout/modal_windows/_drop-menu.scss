@@ -1,0 +1,76 @@
+// ДРОП-МЕНЮ
+// Меню авторизации при нажатии на иконку пользователя
+.dr-menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  height: 115px;
+  background-color: $color-text;
+
+  color: $color-black-section;
+  // позиционирую дропы относительно иконки юзера
+  position: absolute;
+  top: 28px;
+  right: 0px;
+
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+
+.dr-menu.no-auth {
+  padding: 5px 10px 20px 10px;
+  z-index: 1;
+}
+.dr-menu.with-auth {
+  padding: 5px 4px 20px 5px;
+
+  // маргин потмо надо убрать
+  //margin-top: 120px; // чтобы отделить окна друг от друга
+  z-index: 1;
+}
+.dr-menu hr {
+  width: 40px;
+  height: 1.5px;
+  background-color: $color-brown;
+  // margin: 0 auto;
+  margin-top: -8px;
+}
+.dr-menu h2 {
+  color: $color-black-section;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  margin-top: -5px;
+}
+.dr-menu button {
+  background-color: $color-text;
+  color: $color-black-section;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  // padding-bottom: 15px;
+}
+.dr-menu button:last-of-type {
+  margin-bottom: -5px;
+}
+.dr-menu button:hover {
+  cursor: pointer;
+}
+// ставлю удаление дроп меню, если нет класса активный
+.dr-menu.no-active {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+  right: -100000px;
+  width: 0;
+  height: 0;
+  display: none;
+}

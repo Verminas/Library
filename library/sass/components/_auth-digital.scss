@@ -1,0 +1,13 @@
+// выбор между авторизованной и неавторизоанной частью
+.library-card.no-auth.active {
+  display: flex;
+}
+.library-card.no-auth.no-active {
+  display: none;
+}
+.library-card.auth.no-active {
+  display: none;
+}
+.library-card.auth.active {
+  display: flex;
+}

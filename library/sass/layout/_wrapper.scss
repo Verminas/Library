@@ -1,0 +1,8 @@
+.wrapper {
+  //width: 100vw; // только при разработке, незабудь потом убрать!!!!!!
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}

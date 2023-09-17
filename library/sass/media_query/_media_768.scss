@@ -1,0 +1,256 @@
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  header nav {
+    position: absolute; // скрываю обычную навигацию
+  }
+  header .header-img img {
+    margin-top: 2px;
+    margin-right: 2px;
+  }
+  header .burger-menu {
+    // обратно проявляю кнопку бургер
+    position: relative;
+    top: 0px;
+  }
+  .navigation {
+    font-size: 100px !important;
+    animation: fadeOut 0.4s ease-in-out;
+  }
+  // ПОМЕНЯЛА ФОН В ВЕЛКОМЕ
+  .welcome {
+    background-image: url("../assets/Welcome_tablet.png");
+  }
+  // СЕКЦИЯ АБАУТ
+  .about p {
+    padding: 40px 20px;
+  }
+
+  .about .image-carusel {
+    //max-width: 768px;
+    //overflow-y: hidden;
+    margin: 0 auto;
+    object-fit: unset;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: visible;
+    height: 560px;
+    width: 100%;
+    margin-top: -20px;
+  }
+  .about .image-carusel .image {
+    // width: 100%;
+    // height: 100%;
+    width: 450px;
+    height: 560px;
+    //overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    //z-index: -1;
+
+    object-fit: cover;
+  }
+  .about .image-carusel .image img {
+    max-width: 100%;
+    max-height: 100%;
+    // width: 450px;
+    // height: 560px;
+    margin: 0;
+    padding: 0;
+    //object-fit: contain;
+    position: relative;
+    z-index: 10;
+  }
+  //здесь хочу показать стрелочки обратно
+
+  .about .image-carusel .carret {
+    display: contents;
+    height: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  .about .image-carusel .carret.left button {
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: transparent;
+    // position: relative;
+    // right: 2.5%;
+    // z-index: 10;
+  }
+  .about .image-carusel .carret.right button {
+    margin-top: 40px;
+    margin-right: 50px;
+    background-color: transparent;
+    // position: relative;
+    // left: 10px;
+    // z-index: 10;
+  }
+
+  // ДЛЯ РАБОТЫ JS
+  .carret.left {
+    cursor: default;
+  }
+
+  .carret.right {
+    cursor: pointer;
+  }
+  .about .image-carusel .image img {
+    // margin-top: -18px;
+    // margin-left: -10px;
+    // width: 450px;
+    // height: 560px;
+
+    opacity: 0; /* Устанавливаем начальное значение прозрачности */
+    transition: opacity 0.2s ease-in-out; /* Добавляем анимацию перехода */
+  }
+
+  .image-carusel .image img.active {
+    opacity: 1; /* Устанавливаем прозрачность активного изображения */
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  // .about .image-carusel .image img:not(:first-of-type) {
+  //   position: absolute; // скрываю пока лишние картинки
+  //   bottom: 99999999px;
+  // }
+  .about .button-carusel {
+    margin-top: -15px;
+    margin-left: 0px;
+  }
+
+  .about .button-carusel .button.four button,
+  .about .button-carusel .button.five button {
+    position: relative;
+    top: -2px;
+  }
+
+  // СЕКЦИЯ ФАВОРИТС
+  .favorites .all-card {
+    display: flex;
+    flex-direction: column;
+    gap: -30px;
+    flex-wrap: wrap;
+  }
+  .favorites .all-card .card:not(:first-of-type) {
+    margin-top: 5px;
+  }
+
+  .favorites .all-card .card {
+    width: 550px;
+    height: 555px;
+  }
+  .favorites .button {
+    margin-bottom: -4px;
+  }
+  .favorites img {
+    margin-bottom: -4px;
+  }
+
+  // делаю стики для формы с инпутами по тз лайбрари3
+  .favorites {
+    height: 2630px;
+    overflow-y: auto;
+    position: relative;
+    //top: 0;
+  }
+  // стики не работает почему-то!!!!
+  .favorites form {
+    // width: 100%;
+    // height: 25px;
+    position: sticky;
+    z-index: 1;
+    //padding: 25px 0;
+    top: 100px;
+    //background-color: white;
+    //height: 25px;
+  }
+
+  // СЕКЦИЯ КОФЕ-ШОП
+  .coffee-shop {
+    margin-top: -30px;
+    padding: 20px;
+  }
+  .coffee-shop .coffee-shop-paragraph {
+    margin-top: 2px;
+    margin-left: -2px;
+  }
+
+  .coffee-shop .all-coffee-card {
+    flex-direction: column;
+  }
+  .coffee-shop .coffee-shop-paragraph p:last-of-type {
+    margin-left: -2px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:first-of-type {
+    margin-left: -340px;
+    margin-top: 5px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:last-of-type {
+    margin-left: 247px;
+    margin-top: 2px;
+  }
+  .coffee-shop .all-coffee-card .coffee-card:last-of-type p:last-of-type {
+    margin-left: -5px;
+  }
+  // СЕКЦИЯ КОНТАКТС
+  .contacts {
+    margin-top: 20px;
+  }
+  .contacts .address-info-image {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  // СЕКЦИЯ ДИДЖИТАЛ
+  .library-card {
+    margin-top: 1px;
+  }
+  .check-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .library-card .check-card .check-card-two {
+    align-items: center;
+  }
+  .library-card .check-card .check-card-two p:nth-child(2) {
+    width: auto;
+    justify-self: center;
+    text-align: center;
+    margin: 5px 70px;
+  }
+  // ФУТЕР
+  footer,
+  footer .adress-block {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .social-media-list {
+    margin-top: -3px;
+  }
+  footer hr {
+    margin-top: 15px;
+  }
+  footer .footer-two-list li:nth-child(2) {
+    margin-left: -50px;
+  }
+  footer .footer-two-list {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
